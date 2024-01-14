@@ -4,6 +4,7 @@ This lab focuses on the "cd", "ls" and "cat" terminal commands and how they work
 
 * cd
 1. No arguments: The command changes the working directory back to the root directory.
+![Image](https://github.com/aditisadwelkarucsd/cse15l-lab-reports/blob/main/cd1.png)
 2. A path to a directory as an argument: The command changes the working directory to the directory specified in the path.
 3. A path to a file as an argument: Error: The command fails to change directories since the specified path points to a file, not a directory.
 * ls
