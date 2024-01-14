@@ -1,5 +1,5 @@
 # Lab 1 Report
----
+
 This lab focuses on the "cd", "ls" and "cat" terminal commands and how they work with different types of arguments: no arguments, directory path, and file path.
 
 * cd
