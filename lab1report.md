@@ -4,7 +4,8 @@ This lab focuses on the `cd`, `ls` and `cat` terminal commands and how they work
 
 * `$ cd`  
 
-`$ cd` (no arguments): ## No error
+`$ cd` (no arguments): 
+## No error  
 **The command changes the working directory back to the home directory.**  
 Working directory before command: `/home/lecture1`  
 Working directory after command: `/home`  
