@@ -1,10 +1,13 @@
 # Lab 2 Report
 
 Code behind ChatServer:
+![Image](chatserver.png) 
 
 First time adding to the chat:
+![Image](sc1.png) 
 
 Second time adding to the chat:
+![Image](sc2.png) 
 
 
 Which methods in your code are called?
