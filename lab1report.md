@@ -2,7 +2,7 @@
 
 This lab focuses on the "cd", "ls" and "cat" terminal commands and how they work with different types of arguments: no arguments, directory path, and file path.
 
-* cd
+* `$ cd`
 1. No arguments: The command changes the working directory back to the root directory.
 ![Image](cd1.png)
 2. A path to a directory as an argument: The command changes the working directory to the directory specified in the path.
