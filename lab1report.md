@@ -26,7 +26,7 @@ Working directory after command: `/home`
 
 * `$ ls`  
 1. `$ ls` (no arguments): _No error_  
-**The command prints to console the names of the files and folders in the current directory.**
+**The command prints to console the names of the files and folders in the current directory.**  
 Working directory before command: `/home/lecture1`  
 Working directory after command: `/home/lecture1`  
 
@@ -39,7 +39,7 @@ Working directory after command: `/home`
 
 ![Image](ls2.png)  
 
-3. `$ ls <path-to-file>` (a path to a file as an argument): _No error_
+3. `$ ls <path-to-file>` (a path to a file as an argument): _No error_  
 **The command prints the filename with the entire specified file path.**  
 Working directory before command: `/home`  
 Working directory after command: `/home`  
@@ -47,14 +47,14 @@ Working directory after command: `/home`
 ![Image](ls3.png)  
 
 * `$ cat`  
-1. `$ cat` (no arguments): _No error_
+1. `$ cat` (no arguments): _No error_  
 **The console waits for additional input from the user and then proceeds to print whatever you type in until you stop the process with Ctrl+C.**  
 Working directory before command: `/home`  
 Working directory after command: `/home`  
 
 ![Image](cat1.png)  
 
-2. `$ cat <path-to-directory>` (a path to a directory as an argument): _Error_
+2. `$ cat <path-to-directory>` (a path to a directory as an argument): _Error_  
 **The command fails to print anything since the specified path points to a directory, not a file.**  
 Working directory before command: `/home`  
 Working directory after command: `/home`  
