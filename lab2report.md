@@ -1,5 +1,7 @@
 # Lab 2 Report
 
+This lab focuses on creating a server and playing around with url queries. We then shift gears to configuring to the UCSD remote server with a private ssh key.
+
 * Part 1  
 
 Code behind ChatServer:
@@ -30,3 +32,6 @@ Absolute path to the private key: `/Users/aditisadwelkar/.ssh/id_rsa`
 Login without password prompt:  
 ![Image](ssh-login.png)  
 
+* Part 3
+
+From the labs for week 2 and 3, I've learnt how to run a server and parse url queries through code. I've also learnt about how different computers can essentially interact with each other. through servers. Once you have a server up and running, you can have computers get on the server and manipulate variable through url requests. I can now understand how url requests work in the backend: through if-else clauses that parse paramaters from urls. 
