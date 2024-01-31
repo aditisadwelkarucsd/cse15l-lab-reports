@@ -2,7 +2,8 @@
 
 This lab focuses on the `cd`, `ls` and `cat` terminal commands and how they work with different types of arguments: no arguments, directory path, and file path. The command `pwd` is run before and after each command to show the working directory. 
 
-* `$ cd`  
+* `$ cd`
+
 `$ cd` (no arguments): _No error_  
 **The command changes the working directory back to the home directory.**  
 Working directory before command: `/home/lecture1`  
@@ -24,7 +25,8 @@ Working directory after command: `/home`
 
 ![Image](cd3.png)  
 
-* `$ ls`  
+* `$ ls`
+
 `$ ls` (no arguments): _No error_  
 **The command prints to console the names of the files and folders in the current directory.**  
 Working directory before command: `/home/lecture1`  
@@ -46,7 +48,8 @@ Working directory after command: `/home`
 
 ![Image](ls3.png)  
 
-* `$ cat`  
+* `$ cat`
+
 `$ cat` (no arguments): _No error_  
 **The console waits for additional input from the user and then proceeds to print whatever you type in until you stop the process with Ctrl+C.**  
 Working directory before command: `/home`  
