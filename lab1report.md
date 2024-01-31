@@ -3,15 +3,18 @@
 This lab focuses on the "cd", "ls" and "cat" terminal commands and how they work with different types of arguments: no arguments, directory path, and file path.
 
 * `$ cd`
-1. `$ cd` (no arguments): The command changes the working directory back to the root directory.  
+1. `$ cd` (no arguments): _No error_  
+The command changes the working directory back to the root directory.  
 
 ![Image](cd1.png)  
 
-2. `$ cd <path-to-directory>` (a path to a directory as an argument): The command changes the working directory to the directory specified in the path.  
+2. `$ cd <path-to-directory>` (a path to a directory as an argument): _No error_  
+The command changes the working directory to the directory specified in the path.  
 
 ![Image](cd2.png)  
 
-3. `$ cd <path-to-file>` (A path to a file as an argument): Error: The command fails to change directories since the specified path points to a file, not a directory.  
+3. `$ cd <path-to-file>` (A path to a file as an argument): _Error_  
+The command fails to change directories since the specified path points to a file, not a directory.  
 
 ![Image](cd3.png)  
 
@@ -28,7 +31,7 @@ This lab focuses on the "cd", "ls" and "cat" terminal commands and how they work
 
 ![Image](ls3.png)  
 
-* `$ cat`\
+* `$ cat`  
 1. `$ cat` (no arguments): The console waits for additional input from the user and then proceeds to print whatever you type in until you stop the process with Ctrl+C.  
 
 ![Image](cat1.png)  
