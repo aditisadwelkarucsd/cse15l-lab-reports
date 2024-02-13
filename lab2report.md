@@ -25,7 +25,7 @@ Query: `.../add-message?s=Hi&user=sadwelkar`
 
 Looking at the ssh key configuration that allows for logging in to the UCSD remote server without a password.
 
-Absolute path to the public key: `/Users/aditisadwelkar/.ssh/id_rsa.pub`  
+Absolute path to the public key: `/home/linux/ieng6/oce/0g/asadwelkar/.ssh/authorized_keys`  
 ![Image](public-key.png)  
 Absolute path to the private key: `/Users/aditisadwelkar/.ssh/id_rsa`  
 ![Image](private-key.png)  
