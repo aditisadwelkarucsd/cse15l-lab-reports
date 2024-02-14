@@ -29,5 +29,25 @@ public void testReverseInPlaceSuccess() {
 }
 ```
 3. Symptom of the code: We observe that one of the tests fail (`testReverseInPlaceFail()`) and one of them passes (`testReverseInPlaceSuccess()`).
-![Image](JUnit-test-output.png) 
+![Image](JUnit-test-output.png)
+
+4. Idenitified bug: The function only overwrites the first half of the array. We fix this by constraining the range of index values that the for loop goes through by changing `i < arr.length` to `i < arr.length/2`. We also successfully swap the element values at every iteration rather than just overwriting one by introducing a temp variable.
+Code before:  
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+        arr[i] = arr[arr.length - i - 1];
+    }
+}
+```
+Code after:  
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length/2; i += 1) {
+        int temp = arr[i];
+        arr[i] = arr[arr.length - i - 1];
+        arr[arr.length - i - 1] = temp;
+    }
+}
+```
 
