@@ -162,8 +162,6 @@ Boarding the Flights
 ```
 b) Command: `less -X government/Media/5_legal_Groups.txt`
 ```
-
-
 5 Legal Groups at 1 Locale To Serve the February 3, 2002
 Vulnerable
 Salt Lake City Tribune
@@ -187,9 +185,7 @@ Community Legal Center is the first joint office project of public
 4. Option 4: `-S`
 The option cuts the lines of the text file that exceed past the viewing screen. We can see the `>` at the end to indicate the line being cut.  
 a) Command: `less -S 911report/chapter-1.txt`   
-```
-        
-                
+```           
 "WE HAVE SOME PLANES"
 
     Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eas>
@@ -211,8 +207,6 @@ Boarding the Flights
 ```
 b) Command: `less -S government/Media/5_legal_Groups.txt`
 ```
-
-
 5 Legal Groups at 1 Locale To Serve the February 3, 2002
 Vulnerable
 Salt Lake City Tribune
