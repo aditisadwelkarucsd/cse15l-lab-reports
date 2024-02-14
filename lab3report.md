@@ -13,7 +13,7 @@ Here we look at failure-inducing and non-failure-inducing input for a buggy prog
 `    assertArrayEquals(new int[]{ 4,3,2,1 }, input1);`  
 `}`  
 
-2. Non-failure-inducing input: A JUnit test that succeeds when testing `reverseInPlace()`
+2. Non-failure-inducing input: A JUnit test that succeeds when testing `reverseInPlace()`  
 `public void testReverseInPlaceSuccess() {`  
 `    int[] input1 = { 3 };`  
 `    ArrayExamples.reverseInPlace(input1);`  
