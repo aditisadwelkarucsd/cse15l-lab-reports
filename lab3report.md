@@ -1,6 +1,6 @@
 # Lab 3 Report
 
-This lab focuses on identifying bugs in a program through testing and researching commands. 
+This lab focuses on identifying bugs in a program through testing and some research on the command `less`. 
 
 * Part 1
 
@@ -52,4 +52,9 @@ static void reverseInPlace(int[] arr) {
     }
 }
 ```
+
+* Part 2
+
+Here we look at the `less` command and how 4 different options behave on files and directories: `-N`, `-i`, `-X`, and `-S`,
+
 
