@@ -28,5 +28,6 @@ public void testReverseInPlaceSuccess() {
     assertArrayEquals(new int[]{ 3 }, input1);  
 }
 ```
-3. Symptom of the code: we observe that one of the tests fail (`testReverseInPlaceFail()`) and one of them passes (`testReverseInPlaceSuccess()`).
+3. Symptom of the code: We observe that one of the tests fail (`testReverseInPlaceFail()`) and one of them passes (`testReverseInPlaceSuccess()`).
+![Image](JUnit-test-output.png) 
 
