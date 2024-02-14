@@ -186,7 +186,7 @@ Community Legal Center is the first joint office project of public
 
 4. Option 4: `-S`
 The option cuts the lines of the text file that exceed past the viewing screen. We can see the `>` at the end to indicate the line being cut.  
-a) Command: `less -S 911report/chapter-1.txt`
+a) Command: `less -S 911report/chapter-1.txt`   
 ```
         
                 
