@@ -55,7 +55,7 @@ static void reverseInPlace(int[] arr) {
 
 * Part 2
 
-Here we look at the `less` command and how 4 different options behave on files and directories: `-N`, `+<number>`, `-X`, and `-S`,
+Here we look at the `less` command and how 4 different options behave on files and directories: `-N`, `+<number>`, `-X`, and `-S`. To show the working of each option, I've used the same 2 text files for my examples to show how the options change the viewing window. 
 
 All these examples have been run from this working directory path:  
 ```
@@ -102,7 +102,7 @@ b) Command: `less -N government/Media/5_legal_Groups.txt`
 ```
 
 2. Option 2: `+<number>`
-This option shows the contents fo the file from the specified line number. 
+This option shows the contents fo the file from the specified line number.  
 a) Command: `less +8 911report/chapter-1.txt`
 ```
     For those heading to an airport, weather conditions could not have been better
@@ -119,7 +119,7 @@ Boarding the Flights
     Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently
 :
 ```
-b) `less +10 government/Media/5_legal_Groups.txt`
+b) Command: `less +10 government/Media/5_legal_Groups.txt`
 ```
 Five independent Salt Lake organizations that provide legal
 services to the poor, ethnic minorities, seniors and people with
@@ -143,8 +143,9 @@ client waiting room. The building is close in, across the street
 :
 ```
 
-3. Option 3: `-X`  
-a) `less -X 911report/chapter-1.txt`
+3. Option 3: `-X`
+This options makes sure to not clear the screen when we exit the text file viewer. We can see this in the markdown since the command prompt shows up below.  
+a) Command: `less -X 911report/chapter-1.txt`
 ```
 "WE HAVE SOME PLANES"
 
@@ -159,7 +160,7 @@ Boarding the Flights
 (base) aditisadwelkar@Aditis-Mac technical % 
 (base) aditisadwelkar@Aditis-Mac technical % 
 ```
-b) `less -X government/Media/5_legal_Groups.txt`
+b) Command: `less -X government/Media/5_legal_Groups.txt`
 ```
 
 
@@ -183,8 +184,9 @@ Community Legal Center is the first joint office project of public
 (base) aditisadwelkar@Aditis-Mac technical % 
 ```
 
-4. Option 4: `-S`  
-a) `less -S 911report/chapter-1.txt`
+4. Option 4: `-S`
+The option cuts the lines of the text file that exceed past the viewing screen. We can see the `>` at the end to indicate the line being cut.  
+a) Command: `less -S 911report/chapter-1.txt`
 ```
         
                 
@@ -207,7 +209,7 @@ Boarding the Flights
     It would be their final conversation.
 :
 ```
-b) `less -S government/Media/5_legal_Groups.txt`
+b) Command: `less -S government/Media/5_legal_Groups.txt`
 ```
 
 
@@ -230,12 +232,5 @@ campaign of legal services agencies in the country, and the
 Community Legal Center is the first joint office project of public
 :
 ```
-
-
-Online, find 4 interesting command-line options or alternate ways to use the command you chose. There is also a built-in command on many systems called man (short for “manual”) that displays information about commands 
-
-For each of those options, give 2 examples of using it on files and directories from ./technical. Show each example as a code block that shows the command and its output, and write a sentence or two about what it’s doing and why it’s useful.
-
-That makes 8 total examples, all focused on a single command. There should be two examples each for four different command-line options. 
 
 
