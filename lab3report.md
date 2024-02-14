@@ -21,8 +21,10 @@ public void testReverseInPlaceFail() {
 2. Non-failure-inducing input: A JUnit test that succeeds when testing `reverseInPlace()`
 Using the input array `{ 3 }`, the function will produce `{ 3 }` which is the correct reversed array.
 
-`public void testReverseInPlaceSuccess() {`  
-`    int[] input1 = { 3 };`  
-`    ArrayExamples.reverseInPlace(input1);`  
-`    assertArrayEquals(new int[]{ 3 }, input1);`  
-`}`  
+```
+public void testReverseInPlaceSuccess() {  
+    int[] input1 = { 3 };  
+    ArrayExamples.reverseInPlace(input1);  
+    assertArrayEquals(new int[]{ 3 }, input1);  
+}
+```
