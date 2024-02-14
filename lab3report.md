@@ -101,9 +101,10 @@ b) Command: `less -N government/Media/5_legal_Groups.txt`
 :
 ```
 
-2. Option 2: `+<number>`  
+2. Option 2: ```+<number>```
 This option shows the contents fo the file from the specified line number.  
-a) Command: `less +8 911report/chapter-1.txt`  
+a) Command: ```less +8 911report/chapter-1.txt```
+
 ```
     For those heading to an airport, weather conditions could not have been better
  for a safe and pleasant journey. Among the travelers were Mohamed Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Maine.
@@ -119,7 +120,9 @@ Boarding the Flights
     Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently
 :
 ```
-b) Command: `less +10 government/Media/5_legal_Groups.txt`  
+
+b) Command: ```less +10 government/Media/5_legal_Groups.txt```
+
 ```
 Five independent Salt Lake organizations that provide legal
 services to the poor, ethnic minorities, seniors and people with
@@ -143,9 +146,9 @@ client waiting room. The building is close in, across the street
 :
 ```
 
-3. Option 3: `-X`
+3. Option 3: ```-X```
 This options makes sure to not clear the screen when we exit the text file viewer. We can see this in the markdown since the command prompt shows up below.  
-a) Command: `less -X 911report/chapter-1.txt`
+a) Command: ```less -X 911report/chapter-1.txt```
 ```
 "WE HAVE SOME PLANES"
 
@@ -160,7 +163,8 @@ Boarding the Flights
 (base) aditisadwelkar@Aditis-Mac technical % 
 (base) aditisadwelkar@Aditis-Mac technical % 
 ```
-b) Command: `less -X government/Media/5_legal_Groups.txt`
+b) Command: ```less -X government/Media/5_legal_Groups.txt```
+
 ```
 5 Legal Groups at 1 Locale To Serve the February 3, 2002
 Vulnerable
@@ -182,9 +186,9 @@ Community Legal Center is the first joint office project of public
 (base) aditisadwelkar@Aditis-Mac technical % 
 ```
 
-4. Option 4: `-S`
+4. Option 4: ```-S```
 The option cuts the lines of the text file that exceed past the viewing screen. We can see the `>` at the end to indicate the line being cut.  
-a) Command: `less -S 911report/chapter-1.txt`   
+a) Command: ```less -S 911report/chapter-1.txt```  
 ```           
 "WE HAVE SOME PLANES"
 
@@ -205,7 +209,8 @@ Boarding the Flights
     It would be their final conversation.
 :
 ```
-b) Command: `less -S government/Media/5_legal_Groups.txt`
+b) Command: ```less -S government/Media/5_legal_Groups.txt```
+
 ```
 5 Legal Groups at 1 Locale To Serve the February 3, 2002
 Vulnerable
