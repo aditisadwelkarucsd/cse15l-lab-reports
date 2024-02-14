@@ -16,7 +16,9 @@ Using the input array `{ 1,2,3,4 }`, the function will produce `{ 4,3,3,4 }` rat
 `    assertArrayEquals(new int[]{ 4,3,2,1 }, input1);`  
 `}`  
 
-3. Non-failure-inducing input: A JUnit test that succeeds when testing `reverseInPlace()`  
+2. Non-failure-inducing input: A JUnit test that succeeds when testing `reverseInPlace()`
+Using the input array `{ 3 }`, the function will produce `{ 3 }` which is the correct reversed array.
+
 `public void testReverseInPlaceSuccess() {`  
 `    int[] input1 = { 3 };`  
 `    ArrayExamples.reverseInPlace(input1);`  
