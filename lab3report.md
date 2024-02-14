@@ -62,7 +62,7 @@ All these examples have been run from this working directory path:
 /Users/aditisadwelkar/documents/academics/school/UCSD winter 2024/cse 15l/docsearch/technical
 ```
 
-1. Option 1: `-N`
+1. Option 1: `-N`  
 This option displays the line numbers of the file we're looking at.
 a)  `less -N 911report/chapter-1.txt `
 ```
@@ -101,7 +101,7 @@ b) `less -N government/Media/5_legal_Groups.txt`
 :
 ```
 
-2. Option 2: `+<number>`
+2. Option 2: `+<number>`  
 a) `less +8 911report/chapter-1.txt`
 ```
     For those heading to an airport, weather conditions could not have been better
@@ -115,7 +115,8 @@ Boarding the Flights
 
     When he checked in for his flight to Boston, Atta was selected by a computerized prescreening system known as CAPPS (Computer Assisted Passenger Prescreening System), created to identify passengers who should be subject to special security measures. Under security rules in place at the time, the only consequence of Atta's selection by CAPPS was that his checked bags were held off the plane until it was confirmed that he had boarded the aircraft. This did not hinder Atta's plans.
 
-    Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently:
+    Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently
+:
 ```
 b) `less +10 government/Media/5_legal_Groups.txt`
 ```
@@ -141,7 +142,7 @@ client waiting room. The building is close in, across the street
 :
 ```
 
-3. Option 3: `-X`
+3. Option 3: `-X`  
 a) `less -X 911report/chapter-1.txt`
 ```
 "WE HAVE SOME PLANES"
@@ -181,7 +182,7 @@ Community Legal Center is the first joint office project of public
 (base) aditisadwelkar@Aditis-Mac technical % 
 ```
 
-4. Option 4: `-S`
+4. Option 4: `-S`  
 a) `less -S 911report/chapter-1.txt`
 ```
         
