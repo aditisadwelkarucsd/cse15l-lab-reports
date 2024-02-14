@@ -63,8 +63,8 @@ All these examples have been run from this working directory path:
 ```
 
 1. Option 1: `-N`  
-This option displays the line numbers of the file we're looking at.
-a)  `less -N 911report/chapter-1.txt `
+This option displays the line numbers of the file we're looking at.  
+a) Command: `less -N 911report/chapter-1.txt `
 ```
       1 
       2         
@@ -77,7 +77,7 @@ a)  `less -N 911report/chapter-1.txt `
       9 
 :
 ```
-b) `less -N government/Media/5_legal_Groups.txt`
+b) Command: `less -N government/Media/5_legal_Groups.txt`
 ```
       1 
       2 
@@ -101,8 +101,9 @@ b) `less -N government/Media/5_legal_Groups.txt`
 :
 ```
 
-2. Option 2: `+<number>`  
-a) `less +8 911report/chapter-1.txt`
+2. Option 2: `+<number>`
+This option shows the contents fo the file from the specified line number. 
+a) Command: `less +8 911report/chapter-1.txt`
 ```
     For those heading to an airport, weather conditions could not have been better
  for a safe and pleasant journey. Among the travelers were Mohamed Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Maine.
