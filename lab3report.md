@@ -55,6 +55,185 @@ static void reverseInPlace(int[] arr) {
 
 * Part 2
 
-Here we look at the `less` command and how 4 different options behave on files and directories: `-N`, `-i`, `-X`, and `-S`,
+Here we look at the `less` command and how 4 different options behave on files and directories: `-N`, `+<number>`, `-X`, and `-S`,
+
+All these examples have been run from this working directory path:  
+```
+/Users/aditisadwelkar/documents/academics/school/UCSD winter 2024/cse 15l/docsearch/technical
+```
+
+1. Option 1: `-N`
+This option displays the line numbers of the file we're looking at.
+a)  `less -N 911report/chapter-1.txt `
+```
+      1 
+      2         
+      3                 
+      4 "WE HAVE SOME PLANES"
+      5 
+      6     Tuesday, September 11, 2001, dawned temperate and nearly cloudless in       6 the eastern United States. Millions of men and women readied themselves fo      6 r work. Some made their way to the Twin Towers, the signature structures o      6 f the World Trade Center complex in New York City. Others went to Arlingto      6 n, Virginia, to the Pentagon. Across the Potomac River, the United States       6 Congress was back in session. At the other end of Pennsylvania Avenue, peo      6 ple began to line up for a White House tour. In Sarasota, Florida, Preside      6 nt George W. Bush went for an early morning run.
+      7 
+      8     For those heading to an airport, weather conditions could not have bee      8 n better for a safe and pleasant journey. Among the travelers were Mohamed      8  Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Mai      8 ne.
+      9 
+:
+```
+b) `less -N government/Media/5_legal_Groups.txt`
+```
+      1 
+      2 
+      3 
+      4 
+      5 5 Legal Groups at 1 Locale To Serve the February 3, 2002
+      6 Vulnerable
+      7 Salt Lake City Tribune
+      8 
+      9 BY EDWARD MCDONOUGH
+     10 Five independent Salt Lake organizations that provide legal
+     11 services to the poor, ethnic minorities, seniors and people with
+     12 disabilities have joined together to acquire a west-side downtown
+     13 building where they will have their offices. The new Community
+     14 Legal Center at 205 N. 400 West is a project of "And Justice for
+     15 All," which, until this venture, has been a joint fund-raising
+     16 campaign by an alliance of the non-profit providers of free legal
+     17 services. "And Justice for All," which solicits donations primarily
+     18 from Utah lawyers and foundations, was the first joint fund-raising
+     19 campaign of legal services agencies in the country, and the
+:
+```
+
+2. Option 2: `+<number>`
+a) `less +8 911report/chapter-1.txt`
+```
+    For those heading to an airport, weather conditions could not have been better
+ for a safe and pleasant journey. Among the travelers were Mohamed Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Maine.
+
+INSIDE THE FOUR FLIGHTS
+
+Boarding the Flights
+
+    Boston: American 11 and United 175. Atta and Omari boarded a 6:00 A.M. flight from Portland to Boston's Logan International Airport.
+
+    When he checked in for his flight to Boston, Atta was selected by a computerized prescreening system known as CAPPS (Computer Assisted Passenger Prescreening System), created to identify passengers who should be subject to special security measures. Under security rules in place at the time, the only consequence of Atta's selection by CAPPS was that his checked bags were held off the plane until it was confirmed that he had boarded the aircraft. This did not hinder Atta's plans.
+
+    Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently:
+```
+b) `less +10 government/Media/5_legal_Groups.txt`
+```
+Five independent Salt Lake organizations that provide legal
+services to the poor, ethnic minorities, seniors and people with
+disabilities have joined together to acquire a west-side downtown
+building where they will have their offices. The new Community
+Legal Center at 205 N. 400 West is a project of "And Justice for
+All," which, until this venture, has been a joint fund-raising
+campaign by an alliance of the non-profit providers of free legal
+services. "And Justice for All," which solicits donations primarily
+from Utah lawyers and foundations, was the first joint fund-raising
+campaign of legal services agencies in the country, and the
+Community Legal Center is the first joint office project of public
+service law groups.
+The Legal Aid Society of Salt Lake, the Disability Law Center,
+the Multi-Cultural Legal Center, the Senior Lawyer Volunteer
+Project and Utah Legal Services will share the new facility, and
+last Wednesday their board members were given a tour of the
+Community Legal Center hosted by staff members of the five
+agencies. All of the agencies can share the same reception area and
+client waiting room. The building is close in, across the street
+:
+```
+
+3. Option 3: `-X`
+a) `less -X 911report/chapter-1.txt`
+```
+"WE HAVE SOME PLANES"
+
+    Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eastern United States. Millions of men and women readied themselves for work. Some made their way to the Twin Towers, the signature structures of the World Trade Center complex in New York City. Others went to Arlington, Virginia, to the Pentagon. Across the Potomac River, the United States Congress was back in session. At the other end of Pennsylvania Avenue, people began to line up for a White House tour. In Sarasota, Florida, President George W. Bush went for an early morning run.
+
+    For those heading to an airport, weather conditions could not have been better for a safe and pleasant journey. Among the travelers were Mohamed Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Maine.
+
+INSIDE THE FOUR FLIGHTS
+
+Boarding the Flights
+
+(base) aditisadwelkar@Aditis-Mac technical % 
+(base) aditisadwelkar@Aditis-Mac technical % 
+```
+b) `less -X government/Media/5_legal_Groups.txt`
+```
+
+
+5 Legal Groups at 1 Locale To Serve the February 3, 2002
+Vulnerable
+Salt Lake City Tribune
+
+BY EDWARD MCDONOUGH
+Five independent Salt Lake organizations that provide legal
+services to the poor, ethnic minorities, seniors and people with
+disabilities have joined together to acquire a west-side downtown
+building where they will have their offices. The new Community
+Legal Center at 205 N. 400 West is a project of "And Justice for
+All," which, until this venture, has been a joint fund-raising
+campaign by an alliance of the non-profit providers of free legal
+services. "And Justice for All," which solicits donations primarily
+from Utah lawyers and foundations, was the first joint fund-raising
+campaign of legal services agencies in the country, and the
+Community Legal Center is the first joint office project of public
+(base) aditisadwelkar@Aditis-Mac technical % 
+(base) aditisadwelkar@Aditis-Mac technical % 
+```
+
+4. Option 4: `-S`
+a) `less -S 911report/chapter-1.txt`
+```
+        
+                
+"WE HAVE SOME PLANES"
+
+    Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eas>
+
+    For those heading to an airport, weather conditions could not have been bette>
+
+INSIDE THE FOUR FLIGHTS
+
+Boarding the Flights
+
+    Boston: American 11 and United 175. Atta and Omari boarded a 6:00 A.M. flight>
+
+    When he checked in for his flight to Boston, Atta was selected by a computeri>
+
+    Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparentl>
+
+    It would be their final conversation.
+:
+```
+b) `less -S government/Media/5_legal_Groups.txt`
+```
+
+
+
+5 Legal Groups at 1 Locale To Serve the February 3, 2002
+Vulnerable
+Salt Lake City Tribune
+
+BY EDWARD MCDONOUGH
+Five independent Salt Lake organizations that provide legal
+services to the poor, ethnic minorities, seniors and people with
+disabilities have joined together to acquire a west-side downtown
+building where they will have their offices. The new Community
+Legal Center at 205 N. 400 West is a project of "And Justice for
+All," which, until this venture, has been a joint fund-raising
+campaign by an alliance of the non-profit providers of free legal
+services. "And Justice for All," which solicits donations primarily
+from Utah lawyers and foundations, was the first joint fund-raising
+campaign of legal services agencies in the country, and the
+Community Legal Center is the first joint office project of public
+:
+```
+
+
+Online, find 4 interesting command-line options or alternate ways to use the command you chose. There is also a built-in command on many systems called man (short for “manual”) that displays information about commands 
+
+For each of those options, give 2 examples of using it on files and directories from ./technical. Show each example as a code block that shows the command and its output, and write a sentence or two about what it’s doing and why it’s useful.
+
+That makes 8 total examples, all focused on a single command. There should be two examples each for four different command-line options. 
 
 
