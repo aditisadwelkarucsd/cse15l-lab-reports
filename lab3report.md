@@ -213,7 +213,6 @@ b) Command: `less -S government/Media/5_legal_Groups.txt`
 ```
 
 
-
 5 Legal Groups at 1 Locale To Serve the February 3, 2002
 Vulnerable
 Salt Lake City Tribune
