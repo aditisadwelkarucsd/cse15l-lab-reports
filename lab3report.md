@@ -103,7 +103,7 @@ b) Command: `less -N government/Media/5_legal_Groups.txt`
 
 2. Option 2: ```+<number>```
 This option shows the contents fo the file from the specified line number.  
-a) Command: ```less +8 911report/chapter-1.txt```
+a) Command ```less +8 911report/chapter-1.txt```:
 
 ```
     For those heading to an airport, weather conditions could not have been better
