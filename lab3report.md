@@ -8,7 +8,8 @@ Here we look at failure-inducing and non-failure-inducing input for a buggy prog
 `reverseInPlace()`  
 
 1. Failure-inducing input: A JUnit test that fails when testing `reverseInPlace()`
-Using the input array `{ 1,2,3,4 }`, the function will produce `{ 4,3,3,4 }` rather than the correct reversed array `{ 4,3,2,1 }`.  
+Using the input array `{ 1,2,3,4 }`, the function will produce `{ 4,3,3,4 }` rather than the correct reversed array `{ 4,3,2,1 }`.
+
 `public void testReverseInPlaceFail() {`  
 `    int[] input1 = { 1,2,3,4 };`  
 `    ArrayExamples.reverseInPlace(input1);`  
