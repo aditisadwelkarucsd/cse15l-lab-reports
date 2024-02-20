@@ -64,7 +64,8 @@ All these examples have been run from this working directory path:
 
 1. Option 1: `-N`  
 This option displays the line numbers of the file we're looking at.  
-a) Command: `less -N 911report/chapter-1.txt`  
+a) Command: `less -N 911report/chapter-1.txt`
+
 ```
       1 
       2         
@@ -77,7 +78,9 @@ a) Command: `less -N 911report/chapter-1.txt`
       9 
 :
 ```
+
 b) Command: `less -N government/Media/5_legal_Groups.txt`  
+
 ```
       1 
       2 
@@ -149,6 +152,7 @@ client waiting room. The building is close in, across the street
 3. Option 3: `-X`  
 This options makes sure to not clear the screen when we exit the text file viewer. We can see this in the markdown since the command prompt shows up below.  
 a) Command: `less -X 911report/chapter-1.txt`  
+
 ```
 "WE HAVE SOME PLANES"
 
@@ -163,6 +167,7 @@ Boarding the Flights
 (base) aditisadwelkar@Aditis-Mac technical % 
 (base) aditisadwelkar@Aditis-Mac technical % 
 ```
+
 b) Command: `less -X government/Media/5_legal_Groups.txt`  
 
 ```
@@ -188,7 +193,8 @@ Community Legal Center is the first joint office project of public
 
 4. Option 4: `-S`  
 The option cuts the lines of the text file that exceed past the viewing screen. We can see the `>` at the end to indicate the line being cut.  
-a) Command: `less -S 911report/chapter-1.txt`  
+a) Command: `less -S 911report/chapter-1.txt`
+
 ```           
 "WE HAVE SOME PLANES"
 
@@ -209,6 +215,7 @@ Boarding the Flights
     It would be their final conversation.
 :
 ```
+
 b) Command: `less -S government/Media/5_legal_Groups.txt`  
 
 ```
