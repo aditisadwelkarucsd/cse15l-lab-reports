@@ -64,7 +64,7 @@ All these examples have been run from this working directory path:
 
 1. Option 1: `-N`  
 This option displays the line numbers of the file we're looking at.  
-a) Command: `less -N 911report/chapter-1.txt `  
+a) Command: `less -N 911report/chapter-1.txt`    
 ```
       1 
       2         
