@@ -7,7 +7,7 @@ This lab focuses on identifying bugs in a program through testing and some resea
 Here we look at failure-inducing and non-failure-inducing input for a buggy program. I chose to look at a function that reverses the elements in an array.  
 `reverseInPlace()`  
 
-1. Failure-inducing input: A JUnit test that fails when testing `reverseInPlace()`
+Failure-inducing input: A JUnit test that fails when testing `reverseInPlace()`
 Using the input array `{ 1,2,3,4 }`, the function will produce `{ 4,3,3,4 }` rather than the correct reversed array `{ 4,3,2,1 }`.
 
 ```
@@ -18,7 +18,7 @@ public void testReverseInPlaceFail() {
 }
 ```
 
-2. Non-failure-inducing input: A JUnit test that succeeds when testing `reverseInPlace()`
+Non-failure-inducing input: A JUnit test that succeeds when testing `reverseInPlace()`
 Using the input array `{ 3 }`, the function will produce `{ 3 }`, which is the correct reversed array.
 
 ```
@@ -28,10 +28,10 @@ public void testReverseInPlaceSuccess() {
     assertArrayEquals(new int[]{ 3 }, input1);  
 }
 ```
-3. Symptom of the code: We observe that one of the tests fail (`testReverseInPlaceFail()`) and one of them passes (`testReverseInPlaceSuccess()`).
+Symptom of the code: We observe that one of the tests fail (`testReverseInPlaceFail()`) and one of them passes (`testReverseInPlaceSuccess()`).
 ![Image](JUnit-test-output.png)
 
-4. Idenitified bug:  
+Idenitified bug:  
 The function only overwrites the first half of the array. We fix this by overwriting both values at every iteration rather than just one by introducing a `temp` variable. And to avoid overwriting the second half of the array twice, we constrain the range of index values that the `for` loop goes through by changing `i < arr.length` to `i < arr.length/2`.  
   
 Code before:  
@@ -62,7 +62,7 @@ All these examples have been run from this working directory path:
 /Users/aditisadwelkar/documents/academics/school/UCSD winter 2024/cse 15l/docsearch/technical
 ```
 
-1. Option 1: `-N`  
+Option 1: `-N`  
 This option displays the line numbers of the file we're looking at.  
 a) Command: `less -N 911report/chapter-1.txt`
 
@@ -104,7 +104,7 @@ b) Command: `less -N government/Media/5_legal_Groups.txt`
 :
 ```
 
-2. Option 2: `+<number>`  
+Option 2: `+<number>`  
 This option shows the contents fo the file from the specified line number.  
 a) Command: `less +8 911report/chapter-1.txt`  
 
@@ -149,7 +149,7 @@ client waiting room. The building is close in, across the street
 :
 ```
 
-3. Option 3: `-X`  
+Option 3: `-X`  
 This options makes sure to not clear the screen when we exit the text file viewer. We can see this in the markdown since the command prompt shows up below.  
 a) Command: `less -X 911report/chapter-1.txt`  
 
@@ -191,7 +191,7 @@ Community Legal Center is the first joint office project of public
 (base) aditisadwelkar@Aditis-Mac technical % 
 ```
 
-4. Option 4: `-S`  
+Option 4: `-S`  
 The option cuts the lines of the text file that exceed past the viewing screen. We can see the `>` at the end to indicate the line being cut.  
 a) Command: `less -S 911report/chapter-1.txt`
 
