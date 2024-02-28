@@ -13,5 +13,5 @@ This lab focuses on making changes to files in a github repository and pushing t
 5. Running the tests to see they now succeed: `bash test.sh <enter>`  
 ![Image](successtests.png)  
 6. Committing changes to fork: `git add ListExamples.java <enter>`, then `git commit -m "fixed test" <enter>`, then `git push origin main <enter>`  
-![Image](gitadd.png)  
-![Image](gitcommitpush.png)  
+![Image](gitaddcommit.png)  
+![Image](gitpush.png)  
