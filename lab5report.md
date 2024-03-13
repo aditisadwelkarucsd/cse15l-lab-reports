@@ -28,9 +28,14 @@ Sounds good, I've attached a picture of the 2 tests and I've included the file s
 ```
 
 ### _Teaching Assistant_   
-OK, looks like the file structure shouldn't be posing the issue. Since your second test fails, I'm guessing your method implementation has issues with even length arrays. Try printing out the array after it is reversed to see what it looks like. Or use jdb to see what is in the array after reversing:  
-`javac *.java`  
-`jdb ArrayTests`  
-`> stop at ArrayTests: 38`  
-`> run`  
-`> print input1`  
+OK, looks like the file structure shouldn't be posing the issue. Since your second test fails, I'm guessing your method implementation has issues with even length arrays. Try printing out the array after it is reversed to see what it looks like. Or use jdb to see what is in the array after reversing, go through these commands:  
+```
+$javac *.java 
+jdb ArrayTests
+```
+Then in the jdb command prompt:  
+```
+> stop at ArrayTests: 38  
+> run
+> print input1
+```
