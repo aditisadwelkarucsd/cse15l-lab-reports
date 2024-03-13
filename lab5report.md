@@ -42,4 +42,11 @@ Then in the jdb command prompt:
 
 ### _Anonymous_   
 Thanks! I see the issue now, input1 was printed to be this: `{11, 9, 5, 7, 3, 1}` which is strange since I expected this: `{11, 9, 7, 5, 3, 1}`. Here is a screenshot of the code:  
-![Image](reverseinplacebuggy.png) 
+![Image](reverseinplacebuggy.png)  
+
+### _Teaching Assistant_   
+Ah, I see the issue! You're moving an extra index and swapping the middle elements in your array twice. And you only see the issue with even length arrays since the element is swapped with itself in odd length arrays. Try changing the condition in your while loop to this so that you avoid making the last unnecessary swap: `i < arr.length/2`  
+
+### _Anonymous_   
+This worked! Thanks for your help, both tests pass now!    
+![Image](test-pass.png) 
