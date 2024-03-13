@@ -63,3 +63,7 @@ Ah, I see the issue! You're moving an extra index and swapping the middle elemen
 ### _Anonymous_   
 This worked! Thanks for your help, both tests pass now!    
 ![Image](test-success.png)  
+
+* Part 2
+
+I learned a lot about using debugging tools, specifically jdb. I have experience debugging, but I learned jdb can be a valuable tool when you're looking at code with which you are not familiar. Adding a breakpoint in execution to analyze variables at that point can be a powerful way to understand the state of the program and pinpoint problems in logic. I have already started using jdb to debug my CSE 12 programming assignments! 
